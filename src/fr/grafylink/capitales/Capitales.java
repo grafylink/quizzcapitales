@@ -6,10 +6,10 @@ public class Capitales {
     static Scanner clavier = new Scanner(System.in);
 
     public static void main(String[] args) {
-        String[] question = {"France", "Maroc", "Espagne"};
-        String[] answer = {"Paris", "Rabat", "Madrid"};
-        String[] reponse = new String[3];
-        int score = 0;
+        String[] question = {"France", "Maroc", "Espagne", "Suisse", "Canada"};
+        String[] answer = {"Paris", "Rabat", "Madrid", "Berne", "Ottawa"};
+        String[] reponse = new String[5];
+        byte score = 0;
 
       for(int i = 0; i< question.length; i++){
           System.out.println("Quel est la capitale du pays suivant : " + question[i]);
@@ -21,7 +21,7 @@ public class Capitales {
                 System.out.println("Désolé c'est une mauvaise réponse!");
             }
       }
-        System.out.println("votre score final : " + score);
+        System.out.println("votre score final : " + score + "/5");
    }
 }
 
